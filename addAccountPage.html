@@ -1,0 +1,35 @@
+<html>
+<head>
+   <!-- development version, includes helpful console warnings -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">
+
+  var app = new Vue(){
+  
+       el: '#content'
+	   heading: "wellecome to the firstPage"
+	   firstNameLabel: "enter"
+	   function addAccount(){
+	       document.write("accountAdded")
+	      
+	   }
+  }
+
+</script>
+</head>
+<body>
+
+<div id="content"> 
+   <h1>{{heading}}</h1>
+   <form> 
+   
+<label> {{firstNameLabel}}  </label>   <input type="text" name="fristName"> <br>
+	<label> {{fristName}}}  </label> <input type="text" name="LastName">  <br>
+	 <button onclick="addAccount()" > addAccount </button>
+	 
+   </form>
+</div>
+   
+</body>
+
+</html>
